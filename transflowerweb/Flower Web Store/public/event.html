@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transflower Store</title>
+</head>
+<body>
+
+    <button onclick="alert('button is pressed')">Click Me</button>
+    <br><br>
+
+    <button id="myBtn">Press Me</button>
+    <p id="demo">Hello</p>
+
+    <script>
+        var btn = document.getElementById("myBtn");
+
+        btn.addEventListener("click", displayDate);
+        document.addEventListener("mousedown", onMouseDown);
+        document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("mouseup", onMouseUp);
+
+        document.addEventListener("keydown",onkeyDown);
+
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+
+        function onMouseDown(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords = X + x + ",  " + y;
+            document.getElementById("demo").innerHTML =coords;
+        }
+
+        function onMouseUp(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords =  x + ",  " + y;
+            document.getElementById("demo").innerHTML =coords;
+        }
+
+        function onMouseMove(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords = X  + x + ",  " + y;
+            document.getElementById("demo").innerHTML =coords;
+        }
+    </script>
+
+</body>
+</html>

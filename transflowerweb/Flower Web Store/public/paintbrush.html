@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+</html>
+<head>
+        <Title>Paint Brush</Title>
+</head>
+<body>
+        <canvas id="canvas" width="300" height="300"  style="background-color: azure;"></canvas>
+        <!-- <h1 style="color: red;">Transflower paint Brush</h1> -->
+        <h1 style="color: red;"> Transflower Paint Brush</h1>
+        <p style="color: brown;font-size: large;font-size:large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Doing ordinary things extra ordinarily</p>
+
+        <script>
+                function drawLine() {
+                        var theCanvas=document.getElementById("canvas")
+                        var context=theCanvas.getContext("2d");
+                        context.moveTo(10,200);
+                        context.lineTo(200,200);
+                        context.stroke();
+
+                }
+                function drawRectangle(){
+                        var theCanvas=document.getElementById("canvas")
+                        var context=theCanvas.getContext("2d");
+                      //  context.fillStyle="BLUE";
+                        context.fillRect(50,50,200,150);
+
+                }
+
+                function drawTriangle(){
+                        var canvas = document.getElementById('canvas');
+                        if(canvas.getContext)
+                        {
+                                var ctx = canvas.getContext('2d');
+
+                                ctx.beginPath();
+                                ctx.moveTo(75,50);
+                                ctx.lineTo(100,75);
+                                ctx.lineTo(100,25);
+                                ctx.fill();
+                        }
+                } 
+
+
+                function drawCircle(){
+                        var canvas= document.getElementById('canvas');
+                        if(canvas.getContext){
+                        var ctx = canvas.getContext('2d');
+                        ctx.beginPath();
+                        ctx.arc(50,50,40,45,2*Math.PI);
+                        ctx.stroke();
+                        ctx.fill();
+
+                        
+                }
+
+
+                }
+
+                function drawSmily() {
+                        var canvas =document.getElementById('canvas');
+                        
+                }
+
+                drawCircle();
+
+
+                
+        </script>
+        
+</body>
+</html>
