@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logical & Aptitude Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>🧠 Logical & Aptitude Quiz</h2>
+
+    <form id="quizForm">
+
+      <div class="question">
+        <p>1. What comes next in the sequence: 2, 4, 8, 16, ?</p>
+        <label><input type="radio" name="q1" value="science"> 32</label>
+        <label><input type="radio" name="q1" value="commerce"> 64</label>
+        <label><input type="radio" name="q1" value="arts"> 48</label>
+      </div>
+
+      <div class="question">
+        <p>2. If all roses are flowers and some flowers fade quickly, which is true?</p>
+        <label><input type="radio" name="q2" value="commerce"> Some roses fade quickly.</label>
+        <label><input type="radio" name="q2" value="arts"> All roses are flowers.</label>
+        <label><input type="radio" name="q2" value="science"> Some flowers are roses.</label>
+      </div>
+
+      <div class="question">
+        <p>3. A man is facing west. He turns 90° clockwise, then 180°, then 90° anticlockwise. Now he faces?</p>
+        <label><input type="radio" name="q3" value="science"> East</label>
+        <label><input type="radio" name="q3" value="commerce"> South</label>
+        <label><input type="radio" name="q3" value="arts"> West</label>
+      </div>
+
+      <div class="question">
+        <p>4. Missing number: 5, 11, 17, 23, ?, 35</p>
+        <label><input type="radio" name="q4" value="commerce"> 27</label>
+        <label><input type="radio" name="q4" value="arts"> 29</label>
+        <label><input type="radio" name="q4" value="science"> 31</label>
+      </div>
+
+      <div class="question">
+        <p>5. Next number: 3, 6, 18, 72, ?</p>
+        <label><input type="radio" name="q5" value="science"> 216</label>
+        <label><input type="radio" name="q5" value="commerce"> 144</label>
+        <label><input type="radio" name="q5" value="arts"> 96</label>
+      </div>
+
+      <div class="question">
+        <p>6. Rearrange "CIFAIPC" →</p>
+        <label><input type="radio" name="q6" value="arts"> Ocean</label>
+        <label><input type="radio" name="q6" value="commerce"> City</label>
+        <label><input type="radio" name="q6" value="science"> Country</label>
+      </div>
+
+      <div class="question">
+        <p>7. Odd one out:</p>
+        <label><input type="radio" name="q7" value="arts"> Apple</label>
+        <label><input type="radio" name="q7" value="commerce"> Carrot</label>
+        <label><input type="radio" name="q7" value="science"> Banana</label>
+      </div>
+
+      <div class="question">
+        <p>8. Angle at 3:15?</p>
+        <label><input type="radio" name="q8" value="science"> 7.5°</label>
+        <label><input type="radio" name="q8" value="commerce"> 22.5°</label>
+        <label><input type="radio" name="q8" value="arts"> 37.5°</label>
+      </div>
+
+      <div class="question">
+        <p>9. Code for LOGIC?</p>
+        <label><input type="radio" name="q9" value="science"> 12 15 7 9 3</label>
+        <label><input type="radio" name="q9" value="commerce"> 12 15 9 3 7</label>
+        <label><input type="radio" name="q9" value="arts"> 12 7 9 15 3</label>
+      </div>
+
+      <div class="question">
+        <p>10. Next term: 1, 4, 9, 16, 25, ?</p>
+        <label><input type="radio" name="q10" value="science"> 36</label>
+        <label><input type="radio" name="q10" value="commerce"> 49</label>
+        <label><input type="radio" name="q10" value="arts"> 29</label>
+      </div>
+
+      <button type="button" onclick="calculateResult()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
